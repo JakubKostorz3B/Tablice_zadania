@@ -8,7 +8,7 @@
 <body>
     <script>
         const tab = ["Opel", "kot", "1234", "Kuba", "ZSTI", "15cm", "mleczyk", "t3654drxyw45f65", "Złota", "tarcza"];
-
+        console.log("ZADANIE 1");
 console.log( tab[0] ); 
 console.log( tab[1] ); 
 console.log( tab[2] ); 
@@ -19,6 +19,90 @@ console.log( tab[6] );
 console.log( tab[7] ); 
 console.log( tab[8] ); 
 console.log( tab[9] ); 
+
+//zadanie 2
+
+  const tab1 =tab;
+ tab1.reverse();
+
+ console.log("ZADANIE 2");
+console.log( tab1[0] ); 
+console.log( tab1[1] ); 
+console.log( tab1[2] ); 
+console.log( tab1[3] ); 
+console.log( tab1[4] ); 
+console.log( tab1[5] ); 
+console.log( tab1[6] ); 
+console.log( tab1[7] ); 
+console.log( tab1[8] ); 
+console.log( tab1[9] ); 
+//zadanie 3
+const tab2 = [];
+console.log("ZADANIE 3");
+        for (let i = 0; i <= 20; i++) {
+            if (i%3==0 && i%5==0) {
+                tab2.unshift(i);
+            }
+        }
+        for (let i = 0; i < tab2.length; i++) {
+            console.log(tab2[i]);
+        }
+//zadanie4
+const tab3 = ["wyraz"];
+let slowo1=prompt("wpisz cos:");
+let slowo2=prompt("wpisz cos:");
+let slowo3=prompt("wpisz cos:");
+let slowo4=prompt("wpisz cos:");
+let slowo5=prompt("wpisz cos:");
+tab3.unshift(slowo1);
+tab3.unshift(slowo2);
+tab3.unshift(slowo3);
+tab3.unshift(slowo4);
+tab3.unshift(slowo5);
+
+ console.log("ZADANIE 4")
+console.log( tab3[0] ); 
+console.log( tab3[1] ); 
+console.log( tab3[2] ); 
+console.log( tab3[3] ); 
+console.log( tab3[4] ); 
+//zadanie5
+const tab4 =[];
+tab4.push(tab3[0],tab3[1],tab3[2],tab3[3],tab3[4],tab2[0],tab2[1]);
+
+ console.log("ZADANIE 5");
+console.log( tab4[0] ); 
+console.log( tab4[1] ); 
+console.log( tab4[2] ); 
+console.log( tab4[3] ); 
+console.log( tab4[4] ); 
+console.log( tab4[5] ); 
+console.log( tab4[6] ); 
+
+//zadanie6
+const tab5 =[];
+tab5.push(tab4[0],tab4[1],tab4[2],tab4[3],tab4[4],tab4[5],tab4[6])
+tab5.sort();
+
+ console.log("ZADANIE 6")
+ console.log( tab5[0] ); 
+console.log( tab5[1] ); 
+console.log( tab5[2] ); 
+console.log( tab5[3] ); 
+console.log( tab5[4] ); 
+console.log( tab5[5] ); 
+console.log( tab5[6] ); 
+
+
+//zadanie7
+const tab6=[];
+tab6.push(tab2[0],tab2[1],);
+tab6.push(tab3[0],tab3[1],tab3[2],tab3[3],tab3[4]);
+tab6.push(tab4[0],tab4[1],tab4[2],tab4[3],tab4[4],tab4[5],tab4[6]);
+tab6.push(tab5[0],tab5[1],tab5[2],tab5[3],tab5[4],tab5[5],tab5[6]);
+ console.log("ZADANIE 7")
+console.log( tab6 ); 
+
     </script>
 </body>
 </html>
